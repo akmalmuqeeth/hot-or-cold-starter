@@ -27,15 +27,14 @@ $(document).ready(function(){
 		if(isNaN(guess) || (guess <1 || guess > 100)) {
 			$("#feedback").text("Invalid input! Enter number between 1 and 100.");
 		} else {
-
 			var feedback = calculateFeedback(guess);
 			$("#feedback").text(feedback);
-		//increment counter
-		$("#count").text(counter++);
-		//update guess list
-		$("#guessList").append($("<li>"+guess+"</li>"))
-		$("#userGuess").val('');
-	}
+			//increment counter
+			$("#count").text(counter++);
+			//update guess list
+			$("#guessList").append($("<li>"+guess+":"+feedback+"</li>"))
+			$("#userGuess").val('');
+		}
 
 	event.preventDefault();
 });
