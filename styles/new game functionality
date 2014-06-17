@@ -1,0 +1,24 @@
+new game functionality
+	 a secret number between 1 and 100 should be generated that the user will have to guess. You should write a named function that takes care of this.
+
+user feedback
+	This means that you’ll need to write a named function that takes a user guess and determines which feedback to provide.
+	 if a user is 50 or further away from the secret number - ice cold
+	 between 30 and 50 - cold
+	 between 20 and 30 - warm
+	 between 10 and 20 - hot
+	 between 1 and 10 - very hot
+
+	 Feedback about the guess should appear in div#feedback. 
+
+ track how many guess the user has made.
+ 	should appear in span#count (which defaults to 0, when the page loads).
+
+  game should also supply users with a list of the numbers they have guessed so far. 
+  	add each guessed number as an <li> to ul#guessList.
+
+  validation of inputs
+  	user has supplied a numeric input between 1 and 100.
+
+  Clicking “New Game” should trigger the JavaScript function that starts a new game.  
+
